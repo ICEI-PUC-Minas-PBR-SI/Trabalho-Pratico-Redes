@@ -14,18 +14,6 @@ Os membros da equipe são:
 - Ítalo Angelo
 - Izadora Helena
 
-> Incluir a lista dos membros da equipe com seus nomes completos.
-
-# Estrutura do Projeto
-
-1. [Introdução](./docs/1-Introdução.md)
-2. [Trabalhos Relacionados](./docs/2-TrabalhosRelacionados.md)
-3. [Especificação](./docs/3-Especificação.md)
-4. [Metodologia](./docs/4-Metodologia.md)
-5. [Resultado](./docs/5-Resultado.md)
-6. [Conclusão](./docs/6-Conclusão.md)
-7. [Referências Bibliográficas](./docs/7-Referências.md) 
-
 ## Pasta docs
 
 Esta pasta arquiva a documentação dos projetos.
@@ -42,7 +30,4 @@ videos do trabalho.
 
 Este diretório armazena o código fonte do projeto
 
-### Links Úteis:
-
-Aprenda Markdown e use-o para documentar o projeto  
 
