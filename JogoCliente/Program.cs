@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -8,7 +8,7 @@ class Program
     static void Main(string[] args)
     {
         UdpClient cliente = new UdpClient();
-        IPEndPoint servidorEP = new IPEndPoint(IPAddress.Parse("192.168.100.252"), 5000);
+        IPEndPoint servidorEP = new IPEndPoint(IPAddress.Loopback, 5000);
 
         Console.Write("Digite seu nome: ");
         string nome = Console.ReadLine();
@@ -23,8 +23,25 @@ class Program
             string resposta = Encoding.UTF8.GetString(dados);
             Console.WriteLine($"Servidor: {resposta}");
 
-            if (resposta.StartsWith("RESULTADO"))
+            if (resposta.StartsWith("RESULTADO:"))
             {
+                string[] partes = resposta.Split(':');
+                string status = partes[1];
+                int pontos = int.Parse(partes[2]);
+
+                if (status == "ganhou")
+                {
+                    int falta = 21 - pontos;
+                    Console.WriteLine($"Você ganhou com {pontos} pontos!");
+                    Console.WriteLine($"Faltaram {falta} pontos para fazer 21.");
+                }
+                else
+                {
+                    int passou = pontos - 21;
+                    Console.WriteLine($"Você perdeu com {pontos} pontos.");
+                    Console.WriteLine($"Você passou de 21 por {passou} pontos.");
+                }
+
                 jogando = false;
             }
             else if (resposta.StartsWith("CARTA"))
