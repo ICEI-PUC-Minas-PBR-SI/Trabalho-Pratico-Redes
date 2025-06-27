@@ -14,9 +14,9 @@ Este projeto foi desenvolvido como Trabalho Prático da disciplina de **Redes de
 
 ## Participantes
 
-- Hugo Ferreira  
-- Ítalo Angelo  
-- Izadora Helena  
+- Hugo Ferreira Silva 
+- Ítalo Ângelo Pimenta Antão  
+- Izadora Helena Pedrosa Soares Pereira  
 
 ---
 
@@ -24,7 +24,9 @@ Este projeto foi desenvolvido como Trabalho Prático da disciplina de **Redes de
 
 O projeto está organizado em duas pastas principais:
 Blackjack/
+
 ├── JogoServidor/ → Código-fonte do servidor UDP
+
 ├── JogoCliente/ → Código-fonte do cliente UDP
 
 ---
