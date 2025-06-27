@@ -37,8 +37,18 @@ class Program
             else if (mensagem == "PARAR")
             {
                 int pontos = (int)pontuacoes[ipCliente];
-                string resultado = pontos > 21 ? "perdeu" : "ganhou";
-                Enviar(servidor, ipCliente, $"RESULTADO:{resultado}");
+                string resultado;
+
+                if (pontos > 21)
+                {
+                    resultado = $"RESULTADO:perdeu:{pontos}";
+                }
+                else
+                {
+                    resultado = $"RESULTADO:ganhou:{pontos}";
+                }
+
+                Enviar(servidor, ipCliente, resultado);
             }
         }
     }
@@ -53,7 +63,7 @@ class Program
         Enviar(servidor, cliente, $"CARTA:{carta}");
         if (atual > 21)
         {
-            Enviar(servidor, cliente, "RESULTADO:perdeu");
+            Enviar(servidor, cliente, $"RESULTADO:perdeu:{atual}");
         }
     }
 
@@ -63,3 +73,4 @@ class Program
         servidor.Send(dados, dados.Length, cliente);
     }
 }
+
