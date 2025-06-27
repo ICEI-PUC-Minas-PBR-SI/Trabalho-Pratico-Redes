@@ -1,0 +1,14 @@
+C:\Users\hugo2\Blackjack\JogoServidor\bin\Debug\net8.0\JogoServidor.exe
+C:\Users\hugo2\Blackjack\JogoServidor\bin\Debug\net8.0\JogoServidor.deps.json
+C:\Users\hugo2\Blackjack\JogoServidor\bin\Debug\net8.0\JogoServidor.runtimeconfig.json
+C:\Users\hugo2\Blackjack\JogoServidor\bin\Debug\net8.0\JogoServidor.dll
+C:\Users\hugo2\Blackjack\JogoServidor\bin\Debug\net8.0\JogoServidor.pdb
+C:\Users\hugo2\Blackjack\JogoServidor\obj\Debug\net8.0\JogoServidor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hugo2\Blackjack\JogoServidor\obj\Debug\net8.0\JogoServidor.AssemblyInfoInputs.cache
+C:\Users\hugo2\Blackjack\JogoServidor\obj\Debug\net8.0\JogoServidor.AssemblyInfo.cs
+C:\Users\hugo2\Blackjack\JogoServidor\obj\Debug\net8.0\JogoServidor.csproj.CoreCompileInputs.cache
+C:\Users\hugo2\Blackjack\JogoServidor\obj\Debug\net8.0\JogoServidor.dll
+C:\Users\hugo2\Blackjack\JogoServidor\obj\Debug\net8.0\refint\JogoServidor.dll
+C:\Users\hugo2\Blackjack\JogoServidor\obj\Debug\net8.0\JogoServidor.pdb
+C:\Users\hugo2\Blackjack\JogoServidor\obj\Debug\net8.0\JogoServidor.genruntimeconfig.cache
+C:\Users\hugo2\Blackjack\JogoServidor\obj\Debug\net8.0\ref\JogoServidor.dll

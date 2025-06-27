@@ -1,0 +1,14 @@
+C:\Users\hugo2\Blackjack\JogoCliente\bin\Debug\net8.0\JogoCliente.exe
+C:\Users\hugo2\Blackjack\JogoCliente\bin\Debug\net8.0\JogoCliente.deps.json
+C:\Users\hugo2\Blackjack\JogoCliente\bin\Debug\net8.0\JogoCliente.runtimeconfig.json
+C:\Users\hugo2\Blackjack\JogoCliente\bin\Debug\net8.0\JogoCliente.dll
+C:\Users\hugo2\Blackjack\JogoCliente\bin\Debug\net8.0\JogoCliente.pdb
+C:\Users\hugo2\Blackjack\JogoCliente\obj\Debug\net8.0\JogoCliente.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hugo2\Blackjack\JogoCliente\obj\Debug\net8.0\JogoCliente.AssemblyInfoInputs.cache
+C:\Users\hugo2\Blackjack\JogoCliente\obj\Debug\net8.0\JogoCliente.AssemblyInfo.cs
+C:\Users\hugo2\Blackjack\JogoCliente\obj\Debug\net8.0\JogoCliente.csproj.CoreCompileInputs.cache
+C:\Users\hugo2\Blackjack\JogoCliente\obj\Debug\net8.0\JogoCliente.dll
+C:\Users\hugo2\Blackjack\JogoCliente\obj\Debug\net8.0\refint\JogoCliente.dll
+C:\Users\hugo2\Blackjack\JogoCliente\obj\Debug\net8.0\JogoCliente.pdb
+C:\Users\hugo2\Blackjack\JogoCliente\obj\Debug\net8.0\JogoCliente.genruntimeconfig.cache
+C:\Users\hugo2\Blackjack\JogoCliente\obj\Debug\net8.0\ref\JogoCliente.dll
