@@ -73,7 +73,9 @@ No código do cliente, a linha responsável pela conexão está assim:
 
 ## 1. Descubra o IP do servidor
 No computador que executará o servidor, abra o terminal e digite:
+
 ipconfig
+
 Copie o Endereço IPv4 (exemplo: 192.168.0.105)
 
 ## 2. Altere o IP no cliente
