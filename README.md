@@ -115,6 +115,24 @@ O projeto foi testado com sucesso em rede local com dois terminais e também em 
 
 A comunicação via sockets UDP funciona com mensagens simples e diretas.
 
+## Nota sobre a estrutura do repositório
+Durante a organização do projeto no GitHub, a pasta raiz original do projeto (Blackjack/) não foi incluída diretamente no repositório remoto. Isso ocorreu devido à forma como os arquivos foram adicionados ao repositório, mantendo-se apenas as subpastas JogoServidor/ e JogoCliente/ visíveis no diretório principal.
+
+Apesar disso, a divisão lógica do projeto foi mantida exatamente como planejado, seguindo a estrutura:
+
+├── JogoServidor/   → Código-fonte do servidor UDP
+
+├── JogoCliente/    → Código-fonte do cliente UDP
+
+├── README.md       → Instruções de uso e explicações do projeto
+
+├── .gitignore      → Arquivo de exclusões do Git
+
+Ambos os diretórios (JogoServidor e JogoCliente) contêm os respectivos arquivos Program.cs com toda a lógica funcional, organizados separadamente conforme as responsabilidades do cliente e do servidor.
+
+Todas as instruções descritas no README.md continuam válidas, e qualquer pessoa pode executar o projeto normalmente seguindo os passos informados, seja localmente ou em rede.
+
+
 
 
 
