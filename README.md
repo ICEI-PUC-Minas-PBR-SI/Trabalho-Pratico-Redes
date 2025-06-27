@@ -67,7 +67,7 @@ No código do cliente, a linha responsável pela conexão está assim:
 
 - IPEndPoint servidorEP = new IPEndPoint(IPAddress.Loopback, 5000);
 
-# 🌐 Como rodar em dois computadores na mesma rede
+# Como rodar em dois computadores na mesma rede
 
 ## 1. Descubra o IP do servidor
 No computador que executará o servidor, abra o terminal e digite:
@@ -78,7 +78,9 @@ Copie o Endereço IPv4 (exemplo: 192.168.0.105)
 No arquivo Program.cs do cliente, substitua:
 
 IPEndPoint servidorEP = new IPEndPoint(IPAddress.Loopback, 5000);
+
 por:
+
 IPEndPoint servidorEP = new IPEndPoint(IPAddress.Parse("IP_DA_SUA_MÁQUINA"), 5000);
 
 ## 3. Libere a porta no firewall (porta 5000, protocolo UDP)
