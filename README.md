@@ -53,10 +53,11 @@ O cliente:
 ## Como foi testado localmente
 
 Durante os testes:
+
 - O **servidor** foi executado em um terminal com:
-  ```bash
   cd JogoServidor
   dotnet run
+  
 - O cliente foi executado em outro terminal com:
   cd JogoCliente
   dotnet run
@@ -65,6 +66,50 @@ A comunicação foi feita usando localhost (127.0.0.1) e porta 5000.
 No código do cliente, a linha responsável pela conexão está assim:
 
 - IPEndPoint servidorEP = new IPEndPoint(IPAddress.Loopback, 5000);
+
+# 🌐 Como rodar em dois computadores na mesma rede
+
+## 1. Descubra o IP do servidor
+No computador que executará o servidor, abra o terminal e digite:
+ipconfig
+Copie o Endereço IPv4 (exemplo: 192.168.0.105)
+
+## 2. Altere o IP no cliente
+No arquivo Program.cs do cliente, substitua:
+
+IPEndPoint servidorEP = new IPEndPoint(IPAddress.Loopback, 5000);
+por:
+IPEndPoint servidorEP = new IPEndPoint(IPAddress.Parse("IP_DA_SUA_MÁQUINA"), 5000);
+
+## 3. Libere a porta no firewall (porta 5000, protocolo UDP)
+No computador servidor:
+
+Abra o Firewall do Windows
+
+Vá em Regras de Entrada > Nova Regra
+
+Tipo: Porta, protocolo: UDP
+
+Porta: 5000
+
+Permitir a conexão
+
+## Protocolo de Comunicação
+
+Comando	            Origem → Destino	    Descrição
+ENTRAR:<nome>	      Cliente → Servidor	  Jogador entra no jogo
+PEDIR_CARTA	        Cliente → Servidor	  Solicita uma nova carta
+PARAR	              Cliente → Servidor	  Jogador encerra sua vez
+CARTA:<valor>	      Servidor → Cliente	  Envia carta sorteada
+RESULTADO:<status>	Servidor → Cliente	  Resultado da rodada (ganhou/perdeu)
+MENSAGEM:<texto>	  Servidor → Cliente	  Mensagens de boas-vindas ou sistema
+
+## Observações finais
+O projeto foi testado com sucesso em rede local com dois terminais e também em dois computadores diferentes.
+
+A comunicação via sockets UDP funciona com mensagens simples e diretas.
+
+
 
 
 
